@@ -1,0 +1,1334 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>writeup</title></head><body><article class="markdown-body"><div class="toc">
+<ul>
+<li><a href="#traffic-sign-recognition">Traffic Sign Recognition</a><ul>
+<li><a href="#rubric-points">Rubric Points</a><ul>
+<li><a href="#1-data-set-summary-exploration">1. Data Set Summary &amp; Exploration</a><ul>
+<li><a href="#11-data-set-summary">1.1. Data Set Summary.</a></li>
+<li><a href="#12-exploration">1.2. Exploration.</a></li>
+<li><a href="#13-show-all-class-images">1.3. Show All Class Images</a></li>
+</ul>
+</li>
+<li><a href="#2-design-and-test-a-model-architecture">2. Design and Test a Model Architecture</a><ul>
+<li><a href="#21-preprocess">2.1. preprocess</a></li>
+<li><a href="#22-augument">2.2. Augument</a></li>
+<li><a href="#23-net-model">2.3. Net Model</a></li>
+<li><a href="#24-regularization">2.4. Regularization</a></li>
+<li><a href="#25-training">2.5. Training</a></li>
+<li><a href="#26-approach-iteration">2.6. Approach Iteration</a></li>
+</ul>
+</li>
+<li><a href="#3-test-a-model-on-new-images">3. Test a Model on New Images</a><ul>
+<li><a href="#31-show-test-image">3.1. Show Test Image.</a></li>
+<li><a href="#32-prediction">3.2. Prediction</a></li>
+<li><a href="#33-top-5-softmax-probabilities">3.3. Top 5 softmax Probabilities</a></li>
+</ul>
+</li>
+<li><a href="#4-visualizing-the-neural-network">4. Visualizing the Neural Network</a><ul>
+<li><a href="#41-convolution-layer-1">4.1. Convolution Layer 1</a></li>
+<li><a href="#42-convolution-layer-2">4.2. Convolution Layer 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="traffic-sign-recognition"><strong>Traffic Sign Recognition</strong></h1>
+<hr />
+<p><strong>Build a Traffic Sign Recognition Project</strong></p>
+<p>The goals / steps of this project are the following:</p>
+<ul>
+<li>Load the data set (see below for links to the project data set)</li>
+<li>Explore, summarize and visualize the data set</li>
+<li>Design, train and test a model architecture</li>
+<li>Use the model to make predictions on new images</li>
+<li>Analyze the softmax probabilities of the new images</li>
+<li>Summarize the results with a written report</li>
+</ul>
+<h2 id="rubric-points"><a name="user-content-rubric-points" href="#rubric-points" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Rubric Points</h2>
+<p>Here I will consider the <a href="https://review.udacity.com/#!/rubrics/481/view">rubric points</a> individually and describe how I addressed each point in my implementation.<br />
+You&rsquo;re reading it! and here is a link to my <a href="https://github.com/dongkesi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb">project code</a></p>
+<hr />
+<h3 id="1-data-set-summary-exploration"><a name="user-content-1-data-set-summary-exploration" href="#1-data-set-summary-exploration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1. Data Set Summary &amp; Exploration</h3>
+<h4 id="11-data-set-summary"><a name="user-content-11-data-set-summary" href="#11-data-set-summary" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.1. Data Set Summary.</h4>
+<p>Signs data set:</p>
+<ul>
+<li>The size of training set is 34799</li>
+<li>The size of the validation set is 4410</li>
+<li>The size of test set is 12630</li>
+<li>The shape of a traffic sign image is (32, 32, 3)</li>
+<li>The number of unique classes/labels in the data set is 43</li>
+</ul>
+<h4 id="12-exploration"><a name="user-content-12-exploration" href="#12-exploration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.2. Exploration.</h4>
+<p>The visualization of the training valid and test data set. It is a bar chart showing data distribution. We can see that the dataset is unbalanced.</p>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/train_data_summary.png" height="30%" width="30%" alt="Combined Image" /> <img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/valid_data_summary.png" height="30%" width="30%" alt="Combined Image" /> <img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/test_data_summary.png" height="30%" width="30%" alt="Combined Image" /> </p>
+<h4 id="13-show-all-class-images"><a name="user-content-13-show-all-class-images" href="#13-show-all-class-images" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.3. Show All Class Images</h4>
+<p>I plot a bunch of random images every class. These images vary greatly in brightness and contrast, so I need to do some preprocess. </p>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/show_all_classes.png" height="100%" width="100%" alt="Combined Image" /></p>
+<h3 id="2-design-and-test-a-model-architecture"><a name="user-content-2-design-and-test-a-model-architecture" href="#2-design-and-test-a-model-architecture" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2. Design and Test a Model Architecture</h3>
+<h4 id="21-preprocess"><a name="user-content-21-preprocess" href="#21-preprocess" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1. preprocess</h4>
+<p>According to <a href="http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf">this paper</a>, grayscale is better than color images, so I convert images to grayscale and adjust them by Histogram equalization.</p>
+<pre><code class="python">def enhence_single_image(image):
+    x = 0.299 * image[:, :, 0] + 0.587 * image[:, :, 1] + 0.114 * image[:, :, 2]
+    x = (x / 256.).astype(np.float32)
+    with warnings.catch_warnings():dis
+        warnings.simplefilter(&quot;ignore&quot;)
+        x = (exposure.equalize_adapthist(x) - 0.5)
+    x = x.reshape(x.shape + (1,))
+    return x
+
+def enhence_images(images):
+    images_out = np.empty((images.shape[0],images.shape[1],images.shape[2],1)).astype(np.float32)
+    with tqdm(total=images.shape[0]) as pbar:
+        for idx, image in enumerate(images):
+            images_out[idx] = enhence_single_image(image)
+            pbar.update(1)
+    return images_out
+
+def preprocess(x, y):
+    x_enhence, y_enhence = enhence_images(x), y
+    return x_enhence, y_enhenc
+</code></pre>
+
+<h4 id="22-augument"><a name="user-content-22-augument" href="#22-augument" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2. Augument</h4>
+<p>When I first trained the model, the valid accuracy was always lower than training accuracy even if I used regularization methods. So I decide to increase the number of images. The original dataset is unbalanced, but I also find that test and valid datasets have same unbalanced distribution, so I only double the train data on every class by making a little tranform base on original data.</p>
+<pre><code class="python">def transform_images(images):
+    num_images = images.shape[0]
+    d = 0.15
+    base_row = tf.constant([1, 0, 0, 0, 1, 0, 0, 0], shape=[1, 8], dtype=tf.float32)
+    base = tf.tile(base_row, [num_images, 1])   
+    angles = tf.random_uniform([num_images, 8], maxval=d, minval=-d)
+    mask_row = tf.constant([1, 1, 1, 1, 0, 0, 0, 0], shape=[1, 8], dtype=tf.float32)
+    mask = tf.tile(mask_row, [num_images, 1])
+    angles = base + angles * mask
+    transforms = tf.contrib.image.compose_transforms(angles)
+    trans_images = tf.contrib.image.transform(images, transforms, interpolation='BILINEAR')
+    with tf.Session() as sess:
+        out = sess.run(trans_images)
+    return out
+
+def augment_images(x, y, stretch_factor=1, stretch=True, size=None):
+    x = (x).astype(np.float32)
+    x_ext = np.empty((0, x.shape[1], x.shape[2], x.shape[3]), dtype=np.float32)
+    y_ext = np.empty((0), dtype=y.dtype)
+    x_ext = np.append(x_ext, x, axis=0)
+    y_ext = np.append(y_ext, y, axis=0)
+    classes, class_counts = np.unique(y, return_counts = True)
+    n_classes = classes.size
+    max_c = max(class_counts)
+    total = max_c if size is None else size
+    with tqdm(total=n_classes) as pbar:
+        for c, cnt in zip(classes, class_counts):
+            if stretch:
+                total = stretch_factor * cnt
+            if total - cnt &gt; 0:
+                indices = np.random.choice(sum(y==c), total-cnt)
+                x_ = x[y==c][indices]
+                x_ = transform_images(x_)
+                y_ = y[y==c][indices]
+                x_ext = np.append(x_ext, x_, axis=0)
+                y_ext = np.append(y_ext, y_, axis=0)
+            else:
+                continue
+            pbar.update(1)
+    return x_ext, y_ext
+</code></pre>
+
+<p>Here is an example of a traffic sign image before and after tranform and grayscaling.</p>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/preprocessed.png" height="100%" width="100%" alt="Combined Image" /></p>
+<h4 id="23-net-model"><a name="user-content-23-net-model" href="#23-net-model" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.3. Net Model</h4>
+<p>My final model consisted of the following layers:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Layer</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Input</td>
+<td align="center">32x32x1 Grayscale image</td>
+</tr>
+<tr>
+<td align="center">Convolution 5x5</td>
+<td align="center">1x1 stride, valid padding, outputs 28x28x18</td>
+</tr>
+<tr>
+<td align="center">RELU</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Max pooling(1)</td>
+<td align="center">2x2 stride,  outputs 14x14x18</td>
+</tr>
+<tr>
+<td align="center">Dropout(1)</td>
+<td align="center">0.8</td>
+</tr>
+<tr>
+<td align="center">Convolution 5x5</td>
+<td align="center">1x1 stride, valid padding, outputs 10x10x18</td>
+</tr>
+<tr>
+<td align="center">batch_normalization</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">RELU</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Max pooling(2)</td>
+<td align="center">2x2 stride,  outputs 5x5x48</td>
+</tr>
+<tr>
+<td align="center">Dropout(2)</td>
+<td align="center">0.7</td>
+</tr>
+<tr>
+<td align="center">Fully connected</td>
+<td align="center">Max pooling(Dropout(1)) -&gt; [7x7x18] + Dropout(2) <br> flat, inputs 2082, outputs 360</td>
+</tr>
+<tr>
+<td align="center">batch_normalization</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">RELU</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Dropout(2)</td>
+<td align="center">0.6</td>
+</tr>
+<tr>
+<td align="center">Fully connected</td>
+<td align="center">inputs 360, outputs 252</td>
+</tr>
+<tr>
+<td align="center">batch_normalization</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">RELU</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Dropout(2)</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td align="center">Fully connected</td>
+<td align="center">inputs 252, outputs 43</td>
+</tr>
+<tr>
+<td align="center">Softmax</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="python">def net(x, is_training=True, scale=1):
+
+    with tf.variable_scope(&quot;conv1&quot;):
+        conv1 = conv2d(x, 5, 1, 6*scale)
+        conv1 = activation(conv1)
+        pool1 = max_pool(conv1, 2)   
+        pool1 = tf.cond(is_training, lambda: tf.nn.dropout(pool1, 0.8), lambda: pool1)
+
+    with tf.variable_scope(&quot;conv2&quot;):
+        conv2 = conv2d(pool1, 5, 1, 16*scale)
+        conv2 = tf.layers.batch_normalization(conv2, training=is_training)
+        conv2 = activation(conv2)
+        pool2 = max_pool(conv2, 2)
+        pool2 = tf.cond(is_training, lambda: tf.nn.dropout(pool2, 0.7), lambda: pool2)
+
+
+    pool1 = max_pool(pool1, 2)
+    flat1 = tf.contrib.layers.flatten(pool1)
+    flat2 = tf.contrib.layers.flatten(pool2)
+    flat = tf.concat([flat1, flat2], 1)
+
+    with tf.variable_scope(&quot;fc1&quot;):
+        fc1 = fully_connneted(flat, 120*scale)
+        fc1 = tf.layers.batch_normalization(fc1, training=is_training)
+        fc1 = activation(fc1)
+        fc1 = tf.cond(is_training, lambda: tf.nn.dropout(fc1, 0.6), lambda: fc1)
+
+    with tf.variable_scope(&quot;fc2&quot;):
+        fc2 = fully_connneted(fc1, 84*scale)
+        fc2 = tf.layers.batch_normalization(fc2, training=is_training)
+        fc2 = activation(fc2)
+        fc2 = tf.cond(is_training, lambda: tf.nn.dropout(fc2, 0.5), lambda: fc2)
+
+    logits = fully_connneted(fc2, n_classes)
+
+    return logits
+</code></pre>
+
+<h4 id="24-regularization"><a name="user-content-24-regularization" href="#24-regularization" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.4. Regularization</h4>
+<p>I use following regularization techniques for decreasing overfit.</p>
+<ul>
+<li>L2</li>
+<li>Batch Normaliztion, it has a lot <a href="https://github.com/dongkesi/deep-learning-homework/blob/master/tutorials/batch-norm/Batch_Normalization_Lesson.ipynb">benefits</a>.</li>
+<li>Dropout</li>
+<li>Early stopping</li>
+</ul>
+<h4 id="25-training"><a name="user-content-25-training" href="#25-training" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.5. Training</h4>
+<pre><code class="python">BATCH_SIZE = 128
+EPOCHS = 100
+learning_rate = [0.005, 0.003, 0.001, 0.0007, 0.0005, 0.0003, 0.0001,\
+                 0.00007, 0.00005, 0.00003, 0.00001, 0.000005]
+</code></pre>
+
+<p>To train the model, I used an learning rate decay and early stopping. If two consecutive data is lower the best one before, I make the learning rate decay. If the learning rate have gone to the lowest one I defined and then valid accuracy is 10 consecutive times lower than the best accuracy, trigger early stopping.</p>
+<h4 id="26-approach-iteration"><a name="user-content-26-approach-iteration" href="#26-approach-iteration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.6. Approach Iteration</h4>
+<p>I take many trails on this Net.<br />
+<strong>【S1】</strong> I start from LeNet. Validation Accuracy:  0.904762.<br />
+<strong>【S2】</strong> Double all convolution depths and fully connnet layer ouput units. Validation Accuracy:  0.936735<br />
+<strong>【S3】</strong> Double again. Validation Accuracy:  0.929252, become bad.<br />
+<strong>【S4】</strong> Add dropout after every layer. Validation Accuracy:  0.965079.<br />
+<strong>【S5】</strong> Multi-Scale Features, branch out the output of first convolution layer and feed to fully connect layer. Validation Accuracy:  0.969615.<br />
+<strong>【S6】</strong> Add L2. Validation Accuracy:  0.962812. It become bad again, but I keep it.<br />
+<strong>【S7】</strong> Augment train data. Validation Accuracy:  0.983673.<br />
+<strong>【S8】</strong> Learning rate decay and make convolution depths and fully connect layer output units down to triple of original LeNet. Validation Accuracy:  0.990249.</p>
+<p>My final model results were:</p>
+<ul>
+<li>training set accuracy of 100%</li>
+<li>validation set accuracy of 99.0249%</li>
+<li>test set accuracy of 97.9097%</li>
+</ul>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/learning_rate_curve.png" height="70%" width="70%" alt="Combined Image" /></p>
+<p>Actually I get a higher validation accuracy on the training processing before early stopping, I think restore the model to that point is better. </p>
+<h3 id="3-test-a-model-on-new-images"><a name="user-content-3-test-a-model-on-new-images" href="#3-test-a-model-on-new-images" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3. Test a Model on New Images</h3>
+<h4 id="31-show-test-image"><a name="user-content-31-show-test-image" href="#31-show-test-image" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.1. Show Test Image.</h4>
+<p>Here are 18 German traffic signs that I found on the web:</p>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/test.png" height="100%" width="100%" alt="Combined Image" /></p>
+<h4 id="32-prediction"><a name="user-content-32-prediction" href="#32-prediction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.2. Prediction</h4>
+<p>Here are the results of the prediction.</p>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/Test_result.png" height="100%" width="100%" alt="Combined Image" /></p>
+<p>The model was able to correctly guess 17 of the 18 traffic signs, which gives an accuracy of 94.4444%. The red box selected sign has wrong prediction. That sign is very clear in fact, but it failed. It was predicted as Speed limit (20km/h). My test images are all have watermark, it might be a cause.</p>
+<h4 id="33-top-5-softmax-probabilities"><a name="user-content-33-top-5-softmax-probabilities" href="#33-top-5-softmax-probabilities" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.3. Top 5 softmax Probabilities</h4>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/Test_result_with_accuracy.png" height="100%" width="100%" alt="Combined Image" /></p>
+<h3 id="4-visualizing-the-neural-network"><a name="user-content-4-visualizing-the-neural-network" href="#4-visualizing-the-neural-network" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4. Visualizing the Neural Network</h3>
+<h4 id="41-convolution-layer-1"><a name="user-content-41-convolution-layer-1" href="#41-convolution-layer-1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.1. Convolution Layer 1</h4>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/conv1_feature_map.png" height="100%" width="100%" alt="Combined Image" /></p>
+<h4 id="42-convolution-layer-2"><a name="user-content-42-convolution-layer-2" href="#42-convolution-layer-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.2. Convolution Layer 2</h4>
+<p><img src="///C://workspace/self-driving-car/CarND-Traffic-Sign-Classifier-Project/writeup_res/conv2_feature_map.png" height="100%" width="100%" alt="Combined Image" /></p></article></body></html>
