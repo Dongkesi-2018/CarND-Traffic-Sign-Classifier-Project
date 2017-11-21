@@ -1,5 +1,3 @@
-[TOC]
-
 # **Traffic Sign Recognition** 
 
 ---
@@ -34,6 +32,7 @@ The goals / steps of this project are the following:
 
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 You're reading it! and here is a link to my [project code](https://github.com/dongkesi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+
 ---
 
 ### 1. Data Set Summary & Exploration
@@ -232,13 +231,21 @@ To train the model, I used an learning rate decay and early stopping. If two con
 #### 2.6. Approach Iteration
 
 I take many trails on this Net.
+
 **【S1】** I start from LeNet. Validation Accuracy:  0.904762.
+
 **【S2】** Double all convolution depths and fully connnet layer ouput units. Validation Accuracy:  0.936735
+
 **【S3】** Double again. Validation Accuracy:  0.929252, become bad.
+
 **【S4】** Add dropout after every layer. Validation Accuracy:  0.965079.
+
 **【S5】** Multi-Scale Features, branch out the output of first convolution layer and feed to fully connect layer. Validation Accuracy:  0.969615.
+
 **【S6】** Add L2. Validation Accuracy:  0.962812. It become bad again, but I keep it.
+
 **【S7】** Augment train data. Validation Accuracy:  0.983673.
+
 **【S8】** Learning rate decay and make convolution depths and fully connect layer output units down to triple of original LeNet. Validation Accuracy:  0.990249.
 
 My final model results were:
